@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="180dp"
+        android:hint="Username"
+        android:textSize="24dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/greenwhite"
+        android:paddingLeft="20sp"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="105dp"
+        android:hint="Email"
+        android:textSize="24dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/greenwhite"
+        android:paddingLeft="20sp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Password"
+        android:textSize="24dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/greenwhite"
+        android:paddingLeft="20sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_next"
+        app:cornerRadius="20dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="NEXT"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/trivia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/owl1"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:id="@+id/register"
+        android:textStyle="italic|bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/forte"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        android:paddingBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/images"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/images"
+        app:layout_constraintEnd_toEndOf="@+id/images"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="?"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/images"
+        app:layout_constraintBottom_toTopOf="@+id/images"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
